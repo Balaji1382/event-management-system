@@ -11,6 +11,10 @@ const { attachProps, deleteProps } = require("./modifyProps");
 const { paginateResult } = require("./paginateResult");
 
 const addEvents = async (req, res) => {
+    if(req.is('json') !== 'json'){
+        res.status(400).json("Request Body should be of type json");
+        return;
+    }
     const { event_name, city_name, date, time, latitude, longitude } = req.body;
     if(!event_name || !city_name || !date || !time || !latitude || !longitude){
         res.status(400).json("Any of the Properties might be missing : event_name, city_name, date, time, latitude or longitude");
