@@ -19,7 +19,7 @@ Softwares :
 <li>mysql (8.0.30)</li>
 </ul>
 
-Dependencies (given in [package.json](\package.json)): 
+Dependencies (given in [package.json](package.json)): 
 <ul type="*">
 <li>express (4.19.2)</li>
 <li>mysql2 (3.9.2)</li>
@@ -121,7 +121,7 @@ Content-Type : application/json
 }
 ```
 
-#### Request Body {#post}
+#### Request Body
 The handler function expects a request body of type json with the following properties in it:
 * event_name
 * city_name *(Only alphabets and spaces are allowed)*
@@ -148,7 +148,7 @@ The following status codes are sent with the response object:
 * 400 (Bad Request)
     * When the request body is not of type *application/json*
     * When any of the properties in the request body is missing or spelled incorrect
-    * When any of the [format](#request-body-post) of the properties in the request body is violated
+    * When any of the [format](#request-body) of the properties in the request body is violated
 * 201 (Created)
     * When a successful record is created in the database
 
