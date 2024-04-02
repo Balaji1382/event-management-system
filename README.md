@@ -5,7 +5,7 @@ This project involves developing a RESTful API to manage and query event data ba
 ### 1. Clone the repository
 Open cmd in the folder, where you want to clone the repository
 ```
-git clone https://github.com/Balaji1382/gyangrove-ems.git
+git clone https://github.com/Balaji1382/event-management-system.git
 ```
 
 ### 2. Requirements
